@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tip: \n插屏广告支持全屏视频、全屏图文和半屏图文形式。具体展示形式，可在后台配置。"
+        android:textColor="#000"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#C5BBBB"/>
+    <Button
+        android:id="@+id/protrait_interstitial_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="竖屏插屏广告"
+        android:textColor="#000"
+        android:textSize="14sp"
+        />
+    <Button
+        android:id="@+id/landscape_interstitial_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="横屏插屏广告"
+        android:textColor="#000"
+        android:textSize="14sp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".banner.BannerHostActivity">
+
+    <Button
+        android:id="@+id/portraitSplashAdButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取竖屏开屏广告" />
+
+    <Button
+        android:id="@+id/showPortraitSplashAdButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="展示竖屏开屏广告" />
+
+    <Button
+        android:id="@+id/landscapeSplashAdButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取横屏开屏广告" />
+
+    <Button
+        android:id="@+id/showLandscapeSplashAdButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="展示横屏开屏广告" />
+
+</LinearLayout>

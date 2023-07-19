@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:weightSum="2"
+    >
+
+    <TextView
+        android:id="@+id/experimentAttributeNameTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="22dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:textColor="#52575D"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        tools:text="实验参数名" />
+
+    <TextView
+        android:id="@+id/experimentAttributeValueTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:textColor="#888888"
+        android:textSize="14dp"
+        android:gravity="center_vertical"
+        tools:text="实验值"
+        />
+
+</LinearLayout>

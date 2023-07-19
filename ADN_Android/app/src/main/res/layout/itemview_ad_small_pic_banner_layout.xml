@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="6dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="8dp">
+
+
+    <LinearLayout
+        android:id="@+id/appInfoLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/appNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="#1D2127"
+            android:textSize="16dp"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/appDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="#52575D"
+            android:textSize="12dp"
+            android:layout_marginTop="3dp"
+            tools:text="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bannerCreativeBtnRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appInfoLinearLayout"
+        android:gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/scoreLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/realScoreTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="评分"
+                android:textColor="#15C5CE"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/realScoreStarImageView"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/tapad_ic_star_mini" />
+
+            <TextView
+                android:id="@+id/realScoreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:textColor="#15C5CE"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                tools:text="8.9" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/creativeTextView"
+            android:layout_width="117dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/tapad_bg_reward_button_green_corner24dp"
+            android:gravity="center"
+            android:text="立即下载"
+            android:textColor="@android:color/white"
+            android:textSize="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

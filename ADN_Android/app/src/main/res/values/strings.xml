@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TapAdDemo</string>
+    <string name="main_menu_feed">Feed广告</string>
+    <string name="main_menu_banner">Banner广告</string>
+    <string name="main_menu_reward">激励视频广告</string>
+    <string name="main_menu_splash">开屏广告</string>
+    <string name="main_menu_permission">测试权限</string>
+    <string name="main_menu_download">测试下载</string>
+    <string name="exp_menu_delete_configuration">清除配置</string>
+</resources>

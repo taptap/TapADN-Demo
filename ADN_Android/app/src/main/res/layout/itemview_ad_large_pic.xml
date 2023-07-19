@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText"
+    android:paddingBottom="8dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/adLogoLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:background="@drawable/tapad_bg_tap_logo_corner2dp_bottom_right"
+        android:gravity="center"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/portraitBannerAdLogoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/tapad_ic_taptap_mini" />
+
+        <TextView
+            android:id="@+id/portraitBannerAdLogoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="8dp"
+            android:text="广告" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bannerCreativeBtnRelativeLayout"
+        layout="@layout/itemview_ad_big_pic_banner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:layout_below="@id/adLogoLinearLayout"
+        />
+
+    <ImageView
+        android:id="@+id/adImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/bannerCreativeBtnRelativeLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/adImageView"/>
+
+    <include
+        android:id="@+id/adCreativeBtnRelativeLayout"
+        layout="@layout/itemview_ad_creative_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/adImageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+
+</RelativeLayout>

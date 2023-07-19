@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tapsdk.tapad.addemo.MainActivity">
+
+    <TextView
+        android:id="@+id/versionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="version"
+        />
+
+    <ToggleButton
+        android:id="@+id/enableGetAndroidLocationToggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="Get Android ID Disable"
+        android:textOn="Get Android ID Enable"
+        android:checked="true"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/inputAvatarLevelEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input avatar level"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/inputOaidEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input oaid"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/enterShowRewardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_menu_reward" />
+
+    <Button
+        android:id="@+id/enterShowBannerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_menu_banner" />
+
+    <Button
+        android:id="@+id/enterFeedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_menu_feed" />
+
+    <Button android:id="@+id/enterShowSplashButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开屏广告"
+        />
+
+    <Button android:id="@+id/enterShowInterstitialButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插屏广告"
+        />
+
+    <Button
+        android:id="@+id/testUserActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试上报用户行为"
+        />
+
+</LinearLayout>

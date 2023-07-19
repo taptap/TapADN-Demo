@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+    <TextView
+        android:id="@+id/feedTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1"
+        android:maxLines="1"
+        android:singleLine="false"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="14dp"
+        tools:text="卡片标题"
+        />
+
+    <ImageView
+        android:id="@+id/feedImageView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/feedTitleTextView"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/feedDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedImageView"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="12dp"
+        tools:text="卡片描述，肉鸽，成长，修仙，放置" />
+
+</RelativeLayout>
