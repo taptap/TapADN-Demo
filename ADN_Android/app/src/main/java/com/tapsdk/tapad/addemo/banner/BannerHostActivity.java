@@ -1,21 +1,21 @@
 package com.tapsdk.tapad.addemo.banner;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
+import androidx.annotation.IdRes;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 
 
 import com.tapsdk.tapad.addemo.R;
 
-public class BannerHostActivity extends Activity {
+public class BannerHostActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_banner_host);
 
         bindButton(R.id.portraitBannerAdButton, PortraitBannerActivity.class);

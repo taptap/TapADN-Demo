@@ -1,20 +1,20 @@
 package com.tapsdk.tapad.addemo.splash;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.view.ViewGroup;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.tapsdk.tapad.TapSplashAd;
 import com.tapsdk.tapad.addemo.R;
 
-public class LandscapeSplashActivity extends Activity {
+public class LandscapeSplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash_landscape);
 
         SplashAdManager.getInstance().getCachedLandscapeSplashAd().setSplashInteractionListener(new TapSplashAd.AdInteractionListener() {

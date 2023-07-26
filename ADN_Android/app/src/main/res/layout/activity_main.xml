@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.tapsdk.tapad.addemo.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/taplogo"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/versionTextView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="version"
-        />
+        android:text="TapADN SDK V"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/theme_color"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/versionTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
 
     <ToggleButton
         android:id="@+id/enableGetAndroidLocationToggleButton"
@@ -22,7 +48,7 @@
         android:textOn="Get Android ID Enable"
         android:checked="true"
         android:visibility="gone"
-        />
+        style="@style/button_style"/>
 
     <EditText
         android:id="@+id/inputAvatarLevelEditText"
@@ -42,39 +68,44 @@
 
     <Button
         android:id="@+id/enterShowRewardButton"
+        android:text="@string/main_menu_reward"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/main_menu_reward" />
+        style="@style/button_style"
+        />
 
     <Button
         android:id="@+id/enterShowBannerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/main_menu_banner" />
+        android:text="@string/main_menu_banner"
+        style="@style/button_style"/>
 
     <Button
         android:id="@+id/enterFeedButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/main_menu_feed" />
+        android:text="@string/main_menu_feed"
+        style="@style/button_style"/>
 
     <Button android:id="@+id/enterShowSplashButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="开屏广告"
-        />
+        style="@style/button_style"/>
 
     <Button android:id="@+id/enterShowInterstitialButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="插屏广告"
-        />
+        style="@style/button_style"/>
 
     <Button
         android:id="@+id/testUserActionButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="测试上报用户行为"
-        />
+        style="@style/button_style"/>
+    </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

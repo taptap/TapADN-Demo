@@ -1,8 +1,8 @@
 package com.tapsdk.tapad.addemo.banner;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -17,7 +17,7 @@ import com.tapsdk.tapad.TapBannerAd;
 import com.tapsdk.tapad.addemo.R;
 import com.tapsdk.tapad.addemo.widget.TDSToastManager;
 
-public class LandscapeBannerActivity extends Activity {
+public class LandscapeBannerActivity extends AppCompatActivity {
 
     private TapAdNative tapAdNative;
 
@@ -26,7 +26,7 @@ public class LandscapeBannerActivity extends Activity {
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_banner_landscape);
 
         tapAdNative = TapAdManager.get().createAdNative(this);
@@ -47,6 +47,11 @@ public class LandscapeBannerActivity extends Activity {
                         TDSToastManager.instance().dismiss();
                         Toast.makeText(LandscapeBannerActivity.this, "get banner success", Toast.LENGTH_SHORT).show();
                         bannerAd.setBannerInteractionListener(new TapBannerAd.BannerInteractionListener() {
+                            @Override
+                            public void onAdShow() {
+
+                            }
+
                             @Override
                             public void onAdClose() {
                                 Toast.makeText(LandscapeBannerActivity.this, "banner onAdClose", Toast.LENGTH_SHORT).show();

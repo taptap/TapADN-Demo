@@ -9,13 +9,15 @@
         android:id="@+id/portraitBannerAdButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="竖屏Banner广告" />
+        android:text="竖屏Banner广告"
+        style="@style/button_style"/>
 
     <Button
         android:id="@+id/landscapeBannerAdButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="横屏Banner广告" />
+        android:text="横屏Banner广告"
+        style="@style/button_style"/>
 
 
 

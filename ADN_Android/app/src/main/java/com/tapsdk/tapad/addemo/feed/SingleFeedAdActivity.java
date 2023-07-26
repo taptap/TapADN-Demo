@@ -1,9 +1,9 @@
 package com.tapsdk.tapad.addemo.feed;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +20,6 @@ import com.tapsdk.tapad.TapAdNative;
 import com.tapsdk.tapad.TapAppDownloadListener;
 import com.tapsdk.tapad.TapFeedAd;
 import com.tapsdk.tapad.addemo.R;
-import com.tapsdk.tapad.addemo.utils.UIUtils;
 
 import java.util.Collections;
 import java.util.List;
@@ -62,7 +61,7 @@ public class SingleFeedAdActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_itemview_video_feed);
 
         try {

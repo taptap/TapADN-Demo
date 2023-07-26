@@ -1,8 +1,8 @@
 package com.tapsdk.tapad.addemo.splash;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
@@ -17,14 +17,14 @@ import com.tapsdk.tapad.internal.utils.TapADLogger;
 import com.tapsdk.tapad.addemo.R;
 import com.tapsdk.tapad.addemo.widget.TDSToastManager;
 
-public class SplashHostActivity extends Activity {
+public class SplashHostActivity extends AppCompatActivity {
 
     private TapAdNative tapAdNative;
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash_host);
 
         tapAdNative = TapAdManager.get().createAdNative(this);

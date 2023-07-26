@@ -1,8 +1,8 @@
 package com.tapsdk.tapad.addemo.feed;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +21,6 @@ import com.tapsdk.tapad.TapFeedAd;
 import com.tapsdk.tapad.addemo.R;
 import com.tapsdk.tapad.addemo.utils.UIUtils;
 import com.tapsdk.tapad.addemo.widget.LoadMoreView;
-import com.tapsdk.tapad.constants.Constants;
 
 import java.util.Collections;
 import java.util.List;

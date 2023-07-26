@@ -25,14 +25,14 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="load Ad"
-                />
+                style="@style/default_button_style"/>
             <Button
                 android:id="@+id/showAdButton"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="show Ad"
-                />
+                style="@style/default_button_style"/>
 
 
         </LinearLayout>
@@ -43,7 +43,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:text="clean Log" />
+            android:text="clean Log"
+            style="@style/default_button_style"/>
 
         <FrameLayout
             android:id="@+id/native_ad_container"
@@ -65,11 +66,6 @@
             android:singleLine="false"
             android:textSize="14sp" />
 
-        <!--        <View-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="1200dp"-->
-        <!--            android:layout_margin="10dp"-->
-        <!--            android:background="@android:color/transparent" />-->
 
     </LinearLayout>
 

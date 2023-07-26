@@ -1,7 +1,7 @@
 package com.tapsdk.tapad.addemo.splash;
 
-import android.app.Activity;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
@@ -14,12 +14,12 @@ import com.tapsdk.tapad.addemo.R;
 import com.tapsdk.tapad.addemo.utils.DeviceUtils;
 import com.tapsdk.tapad.addemo.utils.UIUtils;
 
-public class PortraitSplashActivity extends Activity {
+public class PortraitSplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash_portrait);
         SplashAdManager.getInstance().getCachedPortraitSplashAd().setSplashInteractionListener(new TapSplashAd.AdInteractionListener() {
             @Override

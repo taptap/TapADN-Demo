@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="下载文件"
         android:layout_below="@id/pb_download"
+        style="@style/default_button_style"
        />
 
 </RelativeLayout>

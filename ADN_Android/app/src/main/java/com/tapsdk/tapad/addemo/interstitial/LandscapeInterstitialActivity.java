@@ -2,6 +2,7 @@ package com.tapsdk.tapad.addemo.interstitial;
 
 import android.app.Activity;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +15,7 @@ import com.tapsdk.tapad.TapInterstitialAd;
 import com.tapsdk.tapad.addemo.R;
 import com.tapsdk.tapad.addemo.widget.TDSToastManager;
 
-public class LandscapeInterstitialActivity extends Activity {
+public class LandscapeInterstitialActivity extends AppCompatActivity {
 
     private static final String TAG = "LandscapeInterstitial";
     private TapAdNative tapAdNative;

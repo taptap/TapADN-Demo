@@ -2,17 +2,14 @@ package com.tapsdk.tapad.addemo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.IdRes;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
-
-
 
 import com.tapsdk.tapad.BuildConfig;
 import com.tapsdk.tapad.Callback;
@@ -25,10 +22,7 @@ import com.tapsdk.tapad.TapAdSdk;
 import com.tapsdk.tapad.UserAction;
 import com.tapsdk.tapad.addemo.banner.BannerHostActivity;
 import com.tapsdk.tapad.addemo.feed.FeedRecyclerViewActivity;
-import com.tapsdk.tapad.addemo.feed.FeedRecyclerViewActivity2;
-import com.tapsdk.tapad.addemo.feed.SingleFeedAdActivity;
 import com.tapsdk.tapad.addemo.interstitial.InterstitialActivity;
-import com.tapsdk.tapad.addemo.interstitial.PortraitInterstitialActivity;
 import com.tapsdk.tapad.addemo.reward.RewardHostActivity;
 import com.tapsdk.tapad.addemo.splash.SplashHostActivity;
 import com.tapsdk.tapad.exceptions.AdException;
@@ -137,11 +131,10 @@ public class MainActivity extends AppCompatActivity {
         TapAdSdk.init(this, config);
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//        // getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
         initFormal();
@@ -155,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
         bindButton(R.id.enterShowInterstitialButton, InterstitialActivity.class);
 
         versionTextView = (TextView) findViewById(R.id.versionTextView);
-        versionTextView.setText(BuildConfig.SDK_VERSION_NAME);
+        versionTextView.setText("TapADN SDK V"+BuildConfig.SDK_VERSION_NAME);
 
         inputAvatarLevelEditText = (EditText)findViewById(R.id.inputAvatarLevelEditText);
         inputOaidEditText = (EditText)findViewById(R.id.inputOaidEditText);

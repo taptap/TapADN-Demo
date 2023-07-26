@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="button_style">
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">15dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawableStart">@mipmap/ad_icon</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+
+    <style name="default_button_style">
+        <item name="android:background">@drawable/button_soild_shape</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+
+
+</resources>
+

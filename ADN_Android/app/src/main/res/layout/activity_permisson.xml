@@ -11,7 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NoPermisson"
-        android:onClick="onNoPermission"/>
+        android:onClick="onNoPermission"
+        style="@style/default_button_style"
+        android:padding="2dp"
+        android:layout_margin="15dp"/>
 
     <Button
         android:id="@+id/bt_permission"
@@ -19,7 +22,10 @@
         android:layout_height="wrap_content"
         android:text="Permisson"
         android:layout_below="@id/bt_no_permission"
-        android:onClick="onPermission"/>
+        android:onClick="onPermission"
+        style="@style/default_button_style"
+        android:padding="2dp"
+        android:layout_margin="15dp"/>
 
     <Button
         android:text="RequestPermisson"
@@ -27,7 +33,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/bt_permission"
-        android:onClick="onRequestPermission"/>
+        android:onClick="onRequestPermission"
+        style="@style/default_button_style"
+        android:padding="2dp"
+        android:layout_margin="15dp"/>
 
     <Button
         android:text="RequestNotify"
@@ -35,6 +44,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/bt_request_permission"
-        android:onClick="onRequestNotify"/>
+        android:onClick="onRequestNotify"
+        style="@style/default_button_style"
+        android:padding="2dp"
+        android:layout_margin="15dp"/>
 
 </RelativeLayout>

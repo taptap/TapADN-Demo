@@ -10,24 +10,28 @@
         android:id="@+id/fetchHorizontalAdButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="获取横屏广告" />
+        android:text="获取横屏广告"
+        style="@style/button_style"/>
 
     <Button
         android:id="@+id/showHorizontalAdButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="显示横屏广告" />
+        android:text="显示横屏广告"
+        style="@style/button_style"/>
 
     <Button
         android:id="@+id/fetchVerticalAdButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="获取竖屏广告" />
+        android:text="获取竖屏广告"
+        style="@style/button_style"/>
 
     <Button
         android:id="@+id/showVerticalAdButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="显示竖屏广告" />
+        android:text="显示竖屏广告"
+        style="@style/button_style"/>
 
 </LinearLayout>
