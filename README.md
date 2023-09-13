@@ -9,7 +9,7 @@
 - [TapADN 接入中心后台地址](https://ssp.taptap.cn/)
 - [Android Demo 下载地址](https://lc-buhezimj.cn-e1.lcfile.com/wfzMCTPo7gjSk2KBu7iMfeRCDPVJ5ECp/app_debug_de110084.1694575821.apk)
 
-![扫码安装](https://lc-buhezimj.cn-e1.lcfile.com/4IAy8KE3Wt16G4tiKt2xYXFIywdYm8HP/1_998511691_171_85_3_745751436_c7dbfb4593fc3460c01cb390feaf60d8.png)
+![扫码安装](https://lc-buhezimj.cn-e1.lcfile.com/5na9TRruh8PR8vovl5xtqRORRC0xr7q5/tapadn_demo.png)
 
 ## Demo 页面样式展示
 
