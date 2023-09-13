@@ -35,7 +35,7 @@ public class LandscapeBannerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 TDSToastManager.instance().showLoading(LandscapeBannerActivity.this);
-                tapAdNative.loadBannerAd(new AdRequest.Builder().withSpaceId(1000053).build(), new TapAdNative.BannerAdListener() {
+                tapAdNative.loadBannerAd(new AdRequest.Builder().withSpaceId(1002046).build(), new TapAdNative.BannerAdListener() {
                     @Override
                     public void onError(int code, String message) {
                         TDSToastManager.instance().dismiss();

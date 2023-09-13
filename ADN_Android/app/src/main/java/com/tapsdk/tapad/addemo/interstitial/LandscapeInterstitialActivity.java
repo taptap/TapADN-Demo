@@ -21,7 +21,7 @@ public class LandscapeInterstitialActivity extends AppCompatActivity {
     private TapAdNative tapAdNative;
     private TapInterstitialAd interstitialAd;
 
-    private int adId = 1000728;
+    private int adId = 1002223;   // 全屏； 半屏：1002224
 
 
     @Override

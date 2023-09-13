@@ -36,7 +36,7 @@ public class SplashHostActivity extends AppCompatActivity {
                 int width = DeviceUtils.getScreenWidth(SplashHostActivity.this);
                 int height = DeviceUtils.getScreenHeight(SplashHostActivity.this) - UIUtils.dp2px(SplashHostActivity.this, 40);
                 TDSToastManager.instance().showLoading(SplashHostActivity.this);
-                tapAdNative.loadSplashAd(new AdRequest.Builder().withSpaceId(1000057)
+                tapAdNative.loadSplashAd(new AdRequest.Builder().withSpaceId(1001560)
                         .withExpressViewAcceptedSize(width, height)
                         .build(), new TapAdNative.SplashAdListener() {
 
@@ -63,7 +63,7 @@ public class SplashHostActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 TDSToastManager.instance().showLoading(SplashHostActivity.this);
-                tapAdNative.loadSplashAd(new AdRequest.Builder().withSpaceId(1000051).build(), new TapAdNative.SplashAdListener() {
+                tapAdNative.loadSplashAd(new AdRequest.Builder().withSpaceId(1001561).build(), new TapAdNative.SplashAdListener() {
 
                     @Override
                     public void onError(int code, String message) {

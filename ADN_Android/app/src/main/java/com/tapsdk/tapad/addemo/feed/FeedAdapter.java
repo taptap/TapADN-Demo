@@ -230,9 +230,11 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             List<View> privacyViewList = Collections.singletonList(largeAdViewHolder.privacyTextView);
 
+            List<View> describeTextView = Collections.singletonList(largeAdViewHolder.describeTextView);
+
             List<View> permissionViewList = Collections.singletonList(largeAdViewHolder.permissionTextView);
 
-            tapFeedAd.registerViewForInteraction((ViewGroup) largeAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
+            tapFeedAd.registerViewForInteraction((ViewGroup) largeAdViewHolder.itemView, clickViewList, creativeViewList,describeTextView, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
                 @Override
                 public void onAdClicked(View view, TapFeedAd ad) {
                     if (ad != null) {
@@ -277,13 +279,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             smallAdViewHolder.appVersionTextView.setText("版本 " + tapFeedAd.getComplianceInfo().getAppVersion());
             smallAdViewHolder.appDescriptionTextView.setText(tapFeedAd.getDescription());
             smallAdViewHolder.developerNameTextView.setText(tapFeedAd.getComplianceInfo().getDeveloperName());
-//            smallAdViewHolder.adImageView.postDelayed(new Runnable() {
-//                @Override
-//                public void run() {
-//                    int width = smallAdViewHolder.adImageView.getWidth();
-//                    UIUtils.setViewSize(smallAdViewHolder.adImageView, width, (int) ((double) width / (16 / (double) 9)));
-//                }
-//            }, 100);
+
 
             List<View> clickViewList = Collections.singletonList(smallAdViewHolder.adImageView);
 
@@ -291,9 +287,11 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             List<View> privacyViewList = Collections.singletonList(smallAdViewHolder.privacyTextView);
 
+            List<View> describeViews = Collections.singletonList(smallAdViewHolder.describeTextView);
+
             List<View> permissionViewList = Collections.singletonList(smallAdViewHolder.permissionTextView);
 
-            tapFeedAd.registerViewForInteraction((ViewGroup) smallAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
+            tapFeedAd.registerViewForInteraction((ViewGroup) smallAdViewHolder.itemView, clickViewList, creativeViewList,describeViews, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
                 @Override
                 public void onAdClicked(View view, TapFeedAd ad) {
                     if (ad != null) {
@@ -343,12 +341,13 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             List<View> clickViewList = Collections.singletonList(videoAdViewHolder.adImageView);
 
             List<View> creativeViewList = Collections.singletonList(videoAdViewHolder.creativeTextView);
+            List<View> describeViews = Collections.singletonList(videoAdViewHolder.describeTextView);
 
             List<View> privacyViewList = Collections.singletonList(videoAdViewHolder.privacyTextView);
 
             List<View> permissionViewList = Collections.singletonList(videoAdViewHolder.permissionTextView);
 //
-            tapFeedAd.registerViewForInteraction((ViewGroup) videoAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
+            tapFeedAd.registerViewForInteraction((ViewGroup) videoAdViewHolder.itemView, clickViewList, creativeViewList,describeViews, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
                 @Override
                 public void onAdClicked(View view, TapFeedAd ad) {
                     if (ad != null) {
@@ -462,6 +461,8 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         private final TextView privacyTextView;
 
+        private final TextView describeTextView;
+
         private final TextView permissionTextView;
 
         private final TextView realScoreTitleTextView;
@@ -485,6 +486,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             realScoreTitleTextView = (TextView) itemView.findViewById(R.id.realScoreTitleTextView);
             realScoreStarImageView = (ImageView) itemView.findViewById(R.id.realScoreStarImageView);
             realScoreTextView = (TextView) itemView.findViewById(R.id.realScoreTextView);
+            describeTextView = (TextView) itemView.findViewById(R.id.describeTextView);
         }
     }
 
@@ -495,6 +497,8 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         ImageView adImageView;
 
         TextView creativeTextView;
+
+        private final TextView describeTextView;
 
         private final TextView appNameTextView;
 
@@ -528,6 +532,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             realScoreTitleTextView = (TextView) itemView.findViewById(R.id.realScoreTitleTextView);
             realScoreStarImageView = (ImageView) itemView.findViewById(R.id.realScoreStarImageView);
             realScoreTextView = (TextView) itemView.findViewById(R.id.realScoreTextView);
+            describeTextView =(TextView) itemView.findViewById(R.id.dscTextView);
         }
     }
 
@@ -556,6 +561,8 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         private final TextView realScoreTextView;
 
+        private final TextView describeTextView;
+
         public SmallAdViewHolder(View itemView) {
             super(itemView);
             adImageView = (ImageView) itemView.findViewById(R.id.adImageView);
@@ -569,6 +576,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             realScoreTitleTextView = (TextView) itemView.findViewById(R.id.realScoreTitleTextView);
             realScoreStarImageView = (ImageView) itemView.findViewById(R.id.realScoreStarImageView);
             realScoreTextView = (TextView) itemView.findViewById(R.id.realScoreTextView);
+            describeTextView = (TextView) itemView.findViewById(R.id.dscTextView);
         }
     }
 }
