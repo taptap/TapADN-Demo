@@ -53,6 +53,16 @@
         android:layout_marginEnd="10dp"
         >
         <TextView
+            android:id="@+id/dscTextView"
+            android:text="详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#868C92"
+            android:textSize="12dp"
+            android:lines="1"
+            android:singleLine="true"
+            />
+        <TextView
             android:id="@+id/privacyTextView"
             android:text="隐私"
             android:layout_width="wrap_content"

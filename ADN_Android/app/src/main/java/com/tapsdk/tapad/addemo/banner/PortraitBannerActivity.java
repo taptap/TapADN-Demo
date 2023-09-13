@@ -32,7 +32,7 @@ public class PortraitBannerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 TDSToastManager.instance().showLoading(PortraitBannerActivity.this);
-                tapAdNative.loadBannerAd(new AdRequest.Builder().withSpaceId(1000059).build(), new TapAdNative.BannerAdListener() {
+                tapAdNative.loadBannerAd(new AdRequest.Builder().withSpaceId(1001411).build(), new TapAdNative.BannerAdListener() {
                     @Override
                     public void onError(int code, String message) {
                         TDSToastManager.instance().dismiss();

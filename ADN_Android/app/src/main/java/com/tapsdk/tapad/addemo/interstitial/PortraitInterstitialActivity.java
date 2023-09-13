@@ -21,7 +21,7 @@ public class PortraitInterstitialActivity extends AppCompatActivity {
     private TapAdNative tapAdNative;
     private TapInterstitialAd interstitialAd;
 
-    private int adId = 1000725;
+    private int adId = 1002222;  // 半屏； 全屏：1001557
 
 
     @Override

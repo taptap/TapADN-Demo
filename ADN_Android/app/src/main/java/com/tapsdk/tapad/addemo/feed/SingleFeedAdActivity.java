@@ -125,9 +125,11 @@ public class SingleFeedAdActivity extends AppCompatActivity {
 
         List<View> privacyViewList = Collections.singletonList(privacyTextView);
 
+        List<View> describeTextView = Collections.singletonList(findViewById(R.id.dscTextView));
+
         List<View> permissionViewList = Collections.singletonList(permissionTextView);
 //
-        tapFeedAd.registerViewForInteraction((ViewGroup) itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
+        tapFeedAd.registerViewForInteraction((ViewGroup) itemView, clickViewList, creativeViewList,describeTextView, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
             @Override
             public void onAdClicked(View view, TapFeedAd ad) {
                 if (ad != null) {
