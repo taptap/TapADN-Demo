@@ -1,6 +1,6 @@
 # TapADN SDK DEMO 
 
-## 最新版本：3.16.3.17
+## 最新版本：3.16.3.20
 
 * [合作方案文档](https://developer.taptap.cn/docs/sdk/tap-adn/scheme/)
 * [功能介绍文档](https://developer.taptap.cn/docs/sdk/tap-adn/features/)

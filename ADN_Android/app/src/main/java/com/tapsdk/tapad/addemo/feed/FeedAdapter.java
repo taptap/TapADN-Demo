@@ -231,7 +231,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             List<View> privacyViewList = Collections.singletonList(largeAdViewHolder.privacyTextView);
 
             List<View> permissionViewList = Collections.singletonList(largeAdViewHolder.permissionTextView);
-
+/*
             tapFeedAd.registerViewForInteraction((ViewGroup) largeAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
                 @Override
                 public void onAdClicked(View view, TapFeedAd ad) {
@@ -255,6 +255,27 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     }
                 }
             });
+            */
+            tapFeedAd.registerViewForInteraction((ViewGroup) largeAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList,null, new TapFeedAd.AdInteractionListener(){
+
+                @Override
+                public void onAdClicked(View view, TapFeedAd tapFeedAd) {
+
+                }
+
+                @Override
+                public void onAdCreativeClick(View view, TapFeedAd tapFeedAd) {
+
+                }
+
+                @Override
+                public void onAdShow(TapFeedAd tapFeedAd) {
+
+                }
+            });
+
+
+
 
             boolean hasScore = (tapFeedAd.getScore() > 0);
             largeAdViewHolder.realScoreStarImageView.setVisibility(hasScore ? View.VISIBLE : View.GONE);
@@ -293,7 +314,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             List<View> permissionViewList = Collections.singletonList(smallAdViewHolder.permissionTextView);
 
-            tapFeedAd.registerViewForInteraction((ViewGroup) smallAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
+            tapFeedAd.registerViewForInteraction((ViewGroup) smallAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList, null, new TapFeedAd.AdInteractionListener() {
                 @Override
                 public void onAdClicked(View view, TapFeedAd ad) {
                     if (ad != null) {
@@ -348,7 +369,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             List<View> permissionViewList = Collections.singletonList(videoAdViewHolder.permissionTextView);
 //
-            tapFeedAd.registerViewForInteraction((ViewGroup) videoAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
+            tapFeedAd.registerViewForInteraction((ViewGroup) videoAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList,null,  new TapFeedAd.AdInteractionListener() {
                 @Override
                 public void onAdClicked(View view, TapFeedAd ad) {
                     if (ad != null) {

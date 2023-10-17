@@ -95,7 +95,7 @@ public class FeedRecyclerViewActivity2 extends AppCompatActivity {
 
                                 List<View> permissionViewList = Collections.singletonList(((TextView)adContainerView.findViewById(R.id.permissionTextView)));
 
-                                tapFeedAd.registerViewForInteraction((ViewGroup) adContainerView, clickViewList, creativeViewList, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
+                                tapFeedAd.registerViewForInteraction((ViewGroup) adContainerView, clickViewList, creativeViewList, privacyViewList, permissionViewList, null, new TapFeedAd.AdInteractionListener() {
                                     @Override
                                     public void onAdClicked(View view, TapFeedAd ad) {
                                         if (ad != null) {

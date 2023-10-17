@@ -127,7 +127,7 @@ public class SingleFeedAdActivity extends AppCompatActivity {
 
         List<View> permissionViewList = Collections.singletonList(permissionTextView);
 //
-        tapFeedAd.registerViewForInteraction((ViewGroup) itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
+        tapFeedAd.registerViewForInteraction((ViewGroup) itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList, null, new TapFeedAd.AdInteractionListener() {
             @Override
             public void onAdClicked(View view, TapFeedAd ad) {
                 if (ad != null) {

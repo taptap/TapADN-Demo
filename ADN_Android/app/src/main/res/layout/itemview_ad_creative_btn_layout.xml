@@ -34,7 +34,7 @@
         android:layout_toLeftOf="@id/privacyAndPermissionLinearLayout"
         android:layout_toStartOf="@id/privacyAndPermissionLinearLayout"
         android:layout_centerVertical="true"
-        tools:text="公司名称ADSDFDSFSDFSDFSDFSDFDSFDSFSDFSFSDSFDSSFDFDS"
+        tools:text="公司名称"
         android:textSize="12dp"
         android:textColor="#B9BEC1"
         android:layout_marginLeft="8dp"
