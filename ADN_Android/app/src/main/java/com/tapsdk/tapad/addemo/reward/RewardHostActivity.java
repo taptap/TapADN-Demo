@@ -137,7 +137,7 @@ public class RewardHostActivity extends AppCompatActivity {
             public void onClick(View v) {
                 TDSToastManager.instance().showLoading(RewardHostActivity.this);
                 AdRequest adRequest = new AdRequest.Builder()
-                        .withSpaceId(1000058)
+                        .withSpaceId(1001253)
                         .withExtra1("{}")
                         .withUserId("123")
                         .build();
