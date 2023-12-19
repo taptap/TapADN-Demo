@@ -122,6 +122,11 @@ public class RewardHostActivity extends AppCompatActivity {
                         public void onSkippedVideo() {
                             Toast.makeText(RewardHostActivity.this, "onSkippedVideo", Toast.LENGTH_SHORT).show();
                         }
+
+                        @Override
+                        public void onAdClick() {
+
+                        }
                     });
                     horizontalCachedAdInfo.showRewardVideoAd(RewardHostActivity.this);
 
@@ -200,6 +205,11 @@ public class RewardHostActivity extends AppCompatActivity {
                         @Override
                         public void onSkippedVideo() {
                             Toast.makeText(RewardHostActivity.this, "onSkippedVideo", Toast.LENGTH_SHORT).show();
+                        }
+
+                        @Override
+                        public void onAdClick() {
+
                         }
                     });
                 } else {

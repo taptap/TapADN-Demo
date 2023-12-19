@@ -1,15 +1,15 @@
 # TapADN SDK DEMO 
 
-## 最新版本：3.16.3.20
+## 最新版本：3.16.3.25
 
 * [合作方案文档](https://developer.taptap.cn/docs/sdk/tap-adn/scheme/)
 * [功能介绍文档](https://developer.taptap.cn/docs/sdk/tap-adn/features/)
 * [接入指南文档](https://developer.taptap.cn/docs/sdk/tap-adn/tds-tapad/)
 
 - [TapADN 接入中心后台地址](https://ssp.taptap.cn/)
-- [Android Demo 下载地址](https://lc-buhezimj.cn-e1.lcfile.com/wfzMCTPo7gjSk2KBu7iMfeRCDPVJ5ECp/app_debug_de110084.1694575821.apk)
+- [Android Demo 下载地址](https://lc-buhezimj.cn-e1.lcfile.com/Ox5rta7mMqaFiNi9OBFncSqKVlRDfcdJ/TapADN_3.16.3.25.apk)
 
-![扫码安装](https://lc-buhezimj.cn-e1.lcfile.com/5na9TRruh8PR8vovl5xtqRORRC0xr7q5/tapadn_demo.png)
+![扫码安装](https://lc-buhezimj.cn-e1.lcfile.com/Moo8NXCTfAlm60vbipHTsHyhMGfOV45V/tapadn-3.16.3.25.png)
 
 ## Demo 页面样式展示
 

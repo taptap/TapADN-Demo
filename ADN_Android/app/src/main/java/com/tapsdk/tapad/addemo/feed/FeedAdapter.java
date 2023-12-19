@@ -231,31 +231,9 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             List<View> privacyViewList = Collections.singletonList(largeAdViewHolder.privacyTextView);
 
             List<View> permissionViewList = Collections.singletonList(largeAdViewHolder.permissionTextView);
-/*
-            tapFeedAd.registerViewForInteraction((ViewGroup) largeAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList, new TapFeedAd.AdInteractionListener() {
-                @Override
-                public void onAdClicked(View view, TapFeedAd ad) {
-                    if (ad != null) {
-                        Toast.makeText(FeedAdapter.this.context, "广告" + tapFeedAd.getTitle() + "被点击", Toast.LENGTH_SHORT).show();
-                    }
-                }
 
-                @Override
-                public void onAdCreativeClick(View view, TapFeedAd ad) {
-                    if (ad != null) {
-                        Toast.makeText(FeedAdapter.this.context, "游戏 " + ad.getTitle() + " 的交互按钮被点击", Toast.LENGTH_SHORT).show();
-                    }
-                }
 
-                @Override
 
-                public void onAdShow(TapFeedAd ad) {
-                    if (ad != null) {
-//                        Toast.makeText(FeedAdapter.this.context, "广告" + ad.getTitle() + "展示", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            });
-            */
             tapFeedAd.registerViewForInteraction((ViewGroup) largeAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList,null, new TapFeedAd.AdInteractionListener(){
 
                 @Override
@@ -368,7 +346,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             List<View> privacyViewList = Collections.singletonList(videoAdViewHolder.privacyTextView);
 
             List<View> permissionViewList = Collections.singletonList(videoAdViewHolder.permissionTextView);
-//
+
             tapFeedAd.registerViewForInteraction((ViewGroup) videoAdViewHolder.itemView, clickViewList, creativeViewList, privacyViewList, permissionViewList,null,  new TapFeedAd.AdInteractionListener() {
                 @Override
                 public void onAdClicked(View view, TapFeedAd ad) {
